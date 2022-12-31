@@ -6,22 +6,32 @@ package io.broudy.leetcode.solutions;
  * https://leetcode.com/problems/ransom-note/
  */
 public class RansomNote {
+
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        final String magazine = "ab";
+        final String ransomNote = "aab";
+
+        System.out.println(canConstruct(ransomNote, magazine));
     }
 
-    public boolean canConstruct(String ransomNote, String magazine) {
+    public static boolean canConstruct(String ransomNote, String magazine) {
+        final boolean canConstruct = true;
 
-        int[] ransomOccurrences = new int[26];
         int[] magazineOccurrences = new int[26];
 
-        for(int i=0;i<ransomNote.size();i++){
-            ransomOccurrences[]
+        for (int i = 0; i < magazine.length(); i++) {
+            magazineOccurrences[magazine.charAt(i) - 'a']++;
         }
 
-        int i,j;
-        i=j=0;
-        
-        
+        for (int i = 0; i < ransomNote.length(); i++) {
+            if (magazineOccurrences[ransomNote.charAt(i) - 'a'] > 0) {
+                magazineOccurrences[ransomNote.charAt(i) - 'a']--;
+            } else {
+                return false;
+            }
+        }
+
+        return canConstruct;
     }
+
 }
