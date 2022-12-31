@@ -1,10 +1,10 @@
-package io.broudy;
+package io.broudy.leetcode;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Template
 {
     public static void main( String[] args )
     {
