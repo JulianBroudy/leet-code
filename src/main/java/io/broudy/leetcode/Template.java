@@ -1,13 +1,13 @@
 package io.broudy.leetcode;
 
 /**
- * Hello world!
+ * ProblemName
  *
+ * ProblemLink
  */
-public class Template
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class Template {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
     }
+    
 }
