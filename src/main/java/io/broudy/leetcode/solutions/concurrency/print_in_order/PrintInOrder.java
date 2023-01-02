@@ -1,6 +1,4 @@
-package io.broudy.leetcode.solutions;
-
-import io.broudy.leetcode.misc.PrintInOrderThread;
+package io.broudy.leetcode.solutions.concurrency.print_in_order;
 
 /**
  * 1114. Print in Order

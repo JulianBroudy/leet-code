@@ -1,4 +1,4 @@
-package io.broudy.leetcode.solutions;
+package io.broudy.leetcode.solutions.concurrency.print_in_order;
 
 import java.util.concurrent.Semaphore;
 

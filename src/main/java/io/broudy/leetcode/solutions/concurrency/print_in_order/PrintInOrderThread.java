@@ -1,6 +1,4 @@
-package io.broudy.leetcode.misc;
-
-import io.broudy.leetcode.solutions.Foo;
+package io.broudy.leetcode.solutions.concurrency.print_in_order;
 
 public class PrintInOrderThread extends Thread {
 
