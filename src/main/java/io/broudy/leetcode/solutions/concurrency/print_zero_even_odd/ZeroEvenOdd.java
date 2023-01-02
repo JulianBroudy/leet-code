@@ -1,6 +1,7 @@
 package io.broudy.leetcode.solutions.concurrency.print_zero_even_odd;
 
 import java.util.concurrent.Semaphore;
+import io.broudy.leetcode.solutions.concurrency.common.IntConsumer;
 
 public class ZeroEvenOdd {
 
