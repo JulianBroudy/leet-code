@@ -1,5 +1,6 @@
 package io.broudy.leetcode.solutions.concurrency.print_zero_even_odd;
 
+import io.broudy.leetcode.solutions.concurrency.common.IntConsumer;
 import io.broudy.leetcode.solutions.concurrency.print_zero_even_odd.PrintZeroEvenOdd.ZeroOrEvenOrOdd;
 
 public class PrintZeroEvenOddThread extends Thread {
