@@ -7,7 +7,6 @@ package io.broudy.leetcode.solutions.concurrency.print_foo_bar_alternately;
  */
 public class PrintFooBarAlternately {
     
-
     public static void main(String[] args) throws InterruptedException {
 
         final int n = 5;
