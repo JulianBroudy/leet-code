@@ -2,7 +2,6 @@ package io.broudy.leetcode.solutions.concurrency.fizz_buzz_multithreaded;
 
 import io.broudy.leetcode.solutions.concurrency.common.IntConsumer;
 import io.broudy.leetcode.solutions.concurrency.fizz_buzz_multithreaded.FizzBuzzMultithreaded.FizzBuzzMethods;
-import io.broudy.leetcode.solutions.concurrency.print_zero_even_odd.PrintZeroEvenOdd.ZeroOrEvenOrOdd;
 
 public class FizzBuzzMultithreadedThread extends Thread {
 
@@ -19,37 +18,33 @@ public class FizzBuzzMultithreadedThread extends Thread {
     @Override
     public void run() {
         switch (fizzBuzzMethods) {
-            case FIZZ: {
+            case FIZZ -> {
                 try {
                     fizzBuzz.fizz(runnable);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                break;
             }
-            case BUZZ: {
+            case BUZZ -> {
                 try {
                     fizzBuzz.buzz(runnable);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                break;
             }
-            case FIZZBUZZ: {
+            case FIZZBUZZ -> {
                 try {
                     fizzBuzz.fizzbuzz(runnable);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                break;
             }
-            case NUMBER: {
+            case NUMBER -> {
                 try {
                     fizzBuzz.number(new IntConsumer());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                break;
             }
         }
     }
