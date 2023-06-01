@@ -1,13 +1,18 @@
 package io.broudy.leetcode;
 
 /**
- * ProblemName
+ * <a href="LINK">NAME</a>.
  *
- * ProblemLink
+ * @author <a href="https://github.com/JulianBroudy">Julian Broudy</a>
  */
 public class Template {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int[] intArray = new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println(renameMe(intArray));
+    }
+
+    private static boolean renameMe(int[] intArray) {
+        return false;
     }
     
 }
