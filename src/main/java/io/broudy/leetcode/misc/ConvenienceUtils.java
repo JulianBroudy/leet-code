@@ -1,6 +1,8 @@
 package io.broudy.leetcode.misc;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Convenience Class.
@@ -27,4 +29,37 @@ public class ConvenienceUtils {
         }
         System.out.print("]\n");
     }
+
+    public static TreeNode buildTree(Integer[] nodes) {
+        if (nodes == null || nodes.length == 0 || nodes[0] == null) {
+            return null;
+        }
+
+        TreeNode root = new TreeNode(nodes[0]);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        int i = 1; // Start from the second element as the first is the root
+        while (i < nodes.length) {
+            TreeNode current = queue.poll();
+
+            // Process left child
+            if (nodes[i] != null) {
+                current.left = new TreeNode(nodes[i]);
+                queue.add(current.left);
+            }
+            i++;
+
+            // Process right child (if there is one)
+            if (i < nodes.length && nodes[i] != null) {
+                current.right = new TreeNode(nodes[i]);
+                queue.add(current.right);
+            }
+            i++;
+        }
+
+        return root;
+    }
+
+
 }
